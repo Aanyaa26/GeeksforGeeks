@@ -1,0 +1,17 @@
+
+// User function Template for Java
+class Solution {
+    static String armstrongNumber(int temp) {
+        int sum =0;
+        int n = temp;
+        while (n>0){
+            int lastdigit = n%10;
+            sum = sum + (lastdigit*lastdigit*lastdigit);
+            n = n/10;
+        }
+        if (sum==temp){
+            return true;
+        }
+        return false;
+    }
+}
