@@ -1,0 +1,15 @@
+Date: 06.07.24
+
+class Solution
+{
+    public long reverse_digit(long n)
+    {
+        long sum =0;
+        while(n>0){
+            long lastdigit = n%10;
+            sum= (sum*10)+ lastdigit;
+            n=n/10;
+        }
+        return sum;
+    }
+}
