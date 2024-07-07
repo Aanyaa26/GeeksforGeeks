@@ -1,0 +1,26 @@
+Date: 07.07.24
+
+class Solution {
+    
+    // helper method to get gcd of 2 numbers.
+    static Long gcd(Long a, Long b)
+    {
+        if(a == 0)
+          return b;
+          
+        return gcd(b%a, a);
+    }
+    
+    static Long[] lcmAndGcd(Long A , Long B) {
+        
+        Long[] arr = new Long[2];
+        
+        Long g = gcd(A,B);   // gcd of two numbers.
+        Long l = (A*B)/g;    // product of 2 numbers divided by their gcd gives their lcm.
+        
+        arr[0] = l;
+        arr[1] = g;
+        
+        return arr;
+    }
+};
