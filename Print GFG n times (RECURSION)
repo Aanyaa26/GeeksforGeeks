@@ -1,0 +1,12 @@
+RECURSION - 18.07.24
+class Solution {
+
+    void printGfg(int N) {
+        if (N>0){
+            
+            System.out.print("GFG" + " ");
+            printGfg(N-1);
+        }
+        return;
+    }
+}
