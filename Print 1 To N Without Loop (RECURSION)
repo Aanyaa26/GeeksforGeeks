@@ -1,0 +1,14 @@
+RECURSION - IN ASCENDING ORDER - 18.07.24
+class Solution
+{
+    
+  public void printNos(int N)
+    {
+        if(N>0){
+            printNos(N-1);
+            System.out.print(N+" ");
+            
+        }
+        return;
+    }
+}
