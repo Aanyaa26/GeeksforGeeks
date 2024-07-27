@@ -1,0 +1,19 @@
+Date: 27.07.24
+
+class Solution {
+
+    // Note that the size of the array is n-1
+    int missingNumber(int n, int arr[]) {
+        int sum = n*(n+1)/2;
+        int arrsum =0;
+        
+        for(int i=0; i<n-1;i++){
+            
+            arrsum = arrsum+arr[i];
+            
+        }
+        return sum-arrsum;
+
+        
+    }
+}
