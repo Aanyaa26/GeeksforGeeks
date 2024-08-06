@@ -2,7 +2,11 @@ Date: 07.08.24
 class Solution{
     static int findSingle(int n, int arr[]){
         Arrays.sort(arr);
+
+// Iterate through the array in steps of 2 to find the single element
+
         for(int i =0; i<arr.length-1;i+=2){
+// why because you are looking to one ahead and previous element for comparison and not the 0 and 1 but 1 0 (hope you understood)
             if(arr[i]!=arr[i+1]){
                 return arr[i];
             }
