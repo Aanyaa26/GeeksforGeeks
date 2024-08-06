@@ -1,0 +1,12 @@
+Date: 07.08.24
+class Solution{
+    static int findSingle(int n, int arr[]){
+        Arrays.sort(arr);
+        for(int i =0; i<arr.length-1;i+=2){
+            if(arr[i]!=arr[i+1]){
+                return arr[i];
+            }
+        }
+return arr[arr.length - 1];        
+    }
+}
