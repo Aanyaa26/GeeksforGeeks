@@ -1,0 +1,17 @@
+Date: 06.08.24
+class Solution {
+    public int print2largest(List<Integer> arr) {
+        if (arr.size() < 2) { 
+            return -1;
+        } 
+            Collections.sort(arr); 
+            
+        int largest = arr.get(arr.size() - 1);
+        for (int i = arr.size() - 2; i >= 0; i--) {
+            if (arr.get(i) != largest) {
+                return arr.get(i);
+        }
+        }
+        return -1;
+    }
+}
